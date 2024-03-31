@@ -4,18 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detailing</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="/src/styles/style.css" />
   </head>
   <body>
-    <div id="app">
+    <div id="container">
       <header class="header">
-        <img class="header__logo" src="/public/logo.svg" alt="" />
+        <img class="header__logo" src="/src/assets/logo.svg" alt="" />
 
-        <nav class="header__nav">
+        <label class="hamburger__container" for="check">
+          <input type="checkbox" class="hamburger" id="check" />
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </label>
+
+        <nav class="header__nav hidden">
           <ul>
-            <li class="header__item"><a class="header__link" href=""></a></li>
-            <li class="header__item"><a class="header__link" href=""></a></li>
-            <li class="header__item"><a class="header__link" href=""></a></li>
-            <li class="header__item"><a class="header__link" href=""></a></li>
+            <li class="header__item">
+              <a class="link" href="#">Главная</a>
+            </li>
+            <li class="header__item">
+              <a class="link" href="#">О нас</a>
+            </li>
+            <li class="header__item">
+              <a class="link" href="#">Услуги</a>
+            </li>
+            <li class="header__item">
+              <a class="link btn btn_gold" href="#">Контакты</a>
+            </li>
           </ul>
         </nav>
       </header>
