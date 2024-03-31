@@ -6,12 +6,14 @@ const menu = document.querySelector(".header__nav");
 function openMenu() {
   if (menu.classList.contains("hidden")) {
     menu.classList.remove("hidden");
-    hamburger.childNodes[1].classList.toggle("hidden");
-    hamburger.childNodes[3].classList.toggle("hidden");
+    menu.classList.remove("slide-top");
+    menu.classList.add("slide-bottom");
   } else {
-    menu.classList.add("hidden");
-    hamburger.childNodes[1].classList.toggle("hidden");
-    hamburger.childNodes[3].classList.toggle("hidden");
+    menu.classList.remove("slide-bottom");
+    menu.classList.add("slide-top");
+    setTimeout(() => {
+      menu.classList.add("hidden");
+    }, 500);
   }
 }
 
