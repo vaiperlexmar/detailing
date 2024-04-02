@@ -3,6 +3,8 @@
   flex-direction: column;
   width: 4rem;
   cursor: pointer;
+  position: relative;
+  z-index: 999;
 }
 
 .hamburger__line {

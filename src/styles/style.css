@@ -4,6 +4,16 @@
 
 :root {
   --light-black: #1e1e1e;
+
+  /* mobile font sizes */
+
+  --fs-1: 3.2rem;
+  --fs-2: 2.4rem;
+  --fs-3: 2rem;
+  --fs-4: 1.8rem;
+  --fs-5: 1.6rem;
+  --fs-6: 1.4rem;
+  --fs-7: 1.2rem;
 }
 
 /*-----------------------------------*\
@@ -47,6 +57,15 @@ body {
   color: white;
 }
 
+.btn_gold {
+  background: linear-gradient(90deg, #ffd613, #8e780d);
+  color: var(--light-black);
+  padding: 0.5rem 2rem;
+  font-size: var(--fs-5);
+  border-radius: 5rem;
+  text-decoration: none;
+}
+
 .link {
   text-decoration: none;
   color: white;
@@ -63,13 +82,27 @@ body {
   position: relative;
 }
 
+.header__logo {
+  position: relative;
+  z-index: 999;
+}
+
 .header__nav {
   position: absolute;
   transform: translate(-50%, -50%);
   width: 100%;
+  padding: 5rem 0 3rem;
 }
 
 .header__nav > ul {
   list-style: none;
   text-align: center;
+}
+
+.header__item {
+  margin-bottom: 1rem;
+}
+
+.header__item > .link {
+  font-size: var(--fs-5);
 }
