@@ -1,0 +1,48 @@
+.hero__collage {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.collage__img {
+  width: 100%;
+  max-width: 25.8rem;
+}
+
+.collage__img_1 {
+  margin-bottom: 1.5rem;
+}
+
+.collage__img_3 {
+  padding-top: 2rem;
+}
+
+.collage__section_2 {
+  order: -1;
+}
+
+.collage__item {
+  position: relative;
+}
+
+.collage__decoration {
+  z-index: -1;
+  position: absolute;
+  width: 9rem;
+}
+
+.collage__decoration_1 {
+  top: -10%;
+  right: -20%;
+}
+
+.collage__decoration_2 {
+  bottom: -10%;
+  left: -25%;
+}
+
+.collage__decoration_3 {
+  top: -5%;
+  left: -10%;
+}
